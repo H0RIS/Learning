@@ -1,5 +1,5 @@
 #define INTEGER int
-
+#if 1
 
 INTEGER Multiply(int a, int b)
 {
@@ -7,3 +7,4 @@ INTEGER Multiply(int a, int b)
 
 	return result;
 #include "EndBrace.h"
+#endif
