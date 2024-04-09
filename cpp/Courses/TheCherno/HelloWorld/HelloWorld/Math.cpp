@@ -1,6 +1,9 @@
-int Multiply(int a, int b)
+#define INTEGER int
+
+
+INTEGER Multiply(int a, int b)
 {
-	int result = a * b;
+	INTEGER result = a * b;
 
 	return result;
 #include "EndBrace.h"
