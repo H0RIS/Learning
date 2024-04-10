@@ -1,10 +1,10 @@
-#define INTEGER int
-#if 1
 
-INTEGER Multiply(int a, int b)
+void Log(const char* message);
+
+static int Multiply(int a, int b)
 {
-	INTEGER result = a * b;
+	Log("Multiply");
+	int result = a * b;
 
 	return result;
-#include "EndBrace.h"
-#endif
+}
