@@ -1,6 +1,6 @@
 #include <iostream>
 
-void Logr(const char* message)
+void Log(const char* message, int level)
 {
 	std::cout << message << std::endl;
 }
