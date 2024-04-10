@@ -1,10 +1,9 @@
-#define INTEGER int
-#if 1
+#include "Log.h"
 
-INTEGER Multiply(int a, int b)
+int Multiply(int a, int b)
 {
-	INTEGER result = a * b;
+	Log("Multiply");
+	int result = a * b;
 
 	return result;
-#include "EndBrace.h"
-#endif
+}
