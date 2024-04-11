@@ -1,10 +1,12 @@
 #include <iostream>
 #include "Log.h"
-
-int Multiply(int a, int b);
+#include "Math.h"
 
 int main()
 {
+	InitLog();
+	Log("Hello, World!");
+
 	unsigned int variable = 4;
 	std::cout << variable << std::endl;
 
@@ -15,6 +17,12 @@ int main()
 	std::cout << a << std::endl;
 
 	std::cout << sizeof(bool) << std::endl;
+	
+	std::cout << Add(9, 8) << std::endl;
+	std::cout << Substract(9, 8) << std::endl;
+	std::cout << Multiply(9, 8) << std::endl;
+	std::cout << Divide(9, 8) << std::endl;
+
 	std::cin.get();
 
 	return 0;
