@@ -5,7 +5,23 @@
 int main()
 {
 	InitLog();
-	Log("Hello, World!");
+
+	int x = 1;
+	bool comparisonResult = (x == 1);
+	if (comparisonResult)
+	{
+		Log("Hello, World!");
+	}
+
+	const char* ptr = nullptr;
+	if (ptr)
+	{
+		Log(ptr);
+	}
+	else
+	{
+		Log("ptr is null!");
+	}
 
 	unsigned int variable = 4;
 	std::cout << variable << std::endl;
