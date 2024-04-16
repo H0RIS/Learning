@@ -39,6 +39,18 @@ int main()
 	std::cout << Multiply(9, 8) << std::endl;
 	std::cout << Divide(9, 8) << std::endl;
 
+	for (int i = 0; i < 5; i++)
+	{
+		Log("Hello, for loop!");
+	}
+
+	int i = 0;
+	while (i < 5)
+	{
+		Log("Hello, while loop!");
+		i++;
+	}
+
 	std::cin.get();
 
 	return 0;
