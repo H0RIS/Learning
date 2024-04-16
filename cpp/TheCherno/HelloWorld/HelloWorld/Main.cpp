@@ -51,6 +51,16 @@ int main()
 		i++;
 	}
 
+	for (int i = 0; i <= 5; i++)
+	{
+		if (i % 2 == 0)
+		{
+			std::cout << i << std::endl;
+			continue;
+		}
+		Log("Hello, continue!");
+	}
+
 	std::cin.get();
 
 	return 0;
