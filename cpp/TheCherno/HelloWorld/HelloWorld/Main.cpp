@@ -43,6 +43,14 @@ int main()
 	{
 		Log("Hello, for loop!");
 	}
+
+	int i = 0;
+	while (i < 5)
+	{
+		Log("Hello, while loop!");
+		i++;
+	}
+
 	std::cin.get();
 
 	return 0;
