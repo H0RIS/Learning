@@ -71,6 +71,15 @@ int main()
 		Log("Hello, continue!");
 	}
 
+	int var = 10;
+	std::cout << var << std::endl;
+	int* pointer = &var;
+	*pointer = 4;
+	std::cout << var << std::endl;
+
+	char* buffer = new char[8];
+	memset(buffer, 0, 8);
+
 	std::cin.get();
 
 	return 0;
