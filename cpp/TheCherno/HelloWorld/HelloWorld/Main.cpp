@@ -2,6 +2,17 @@
 #include "Log.h"
 #include "Math.h"
 
+
+void Increment(int value)
+{
+	value++;
+}
+
+void IncrementByReference(int& value)
+{
+	value++;
+}
+
 int main()
 {
 	InitLog();
@@ -79,6 +90,18 @@ int main()
 
 	char* buffer = new char[8];
 	memset(buffer, 0, 8);
+
+	int aa = 5;
+	int& ref = aa;
+	ref = 2;
+	std::cout << aa << std::endl;
+	std::cout << ref << std::endl;
+	Increment(aa);
+	std::cout << aa << std::endl;
+	IncrementByReference(aa);
+	std::cout << aa << std::endl;
+
+
 
 	std::cin.get();
 
