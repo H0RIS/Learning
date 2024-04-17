@@ -68,7 +68,7 @@ int main()
 			std::cout << i << std::endl;
 			break;
 		}
-		Log("Hello, continue!");
+		Log("Hello, break!");
 	}
 
 	int var = 10;
