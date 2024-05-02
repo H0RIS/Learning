@@ -24,7 +24,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b4b89c02-5d74-498e-a851-e095d9784eef}</ProjectGuid>
+    <ProjectGuid>{4b2fcacc-50db-4265-9d1a-8f33e862b48c}</ProjectGuid>
     <RootNamespace>repeated_word_detection</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
