@@ -7,6 +7,6 @@ int main()
 	std::cin >> first_name;
 	std::cout << "Dear " << first_name << ",\n";
 
-
+	std::cout << "  How are you?\nWe haven't talked in a while, I was wondering how are things going.";
 
 }
