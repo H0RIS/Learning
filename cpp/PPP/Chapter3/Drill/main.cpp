@@ -1,15 +1,36 @@
 import std;
 
+constexpr double max_double{ std::numeric_limits<double>::max() };
+constexpr double lowest_double{ std::numeric_limits<double>::lowest() };
+
 int main()
 {
 	std::vector<double> nums;
 	double temp{ 0.0 };
+	double largest{ lowest_double };
+	double smallest{ max_double };
 
-	std::cout << "Please enter 2 doubles:\n";
+	std::cout << "Please enter a double:\n";
 
 	while (std::cin >> temp)
 	{
 		nums.push_back(temp);
+
+		if (temp > largest)
+		{
+			largest = temp;
+			std::cout << "The largest so far\n";
+		}
+
+		if (temp < smallest)
+		{
+			smallest = temp;
+			std::cout << "The smallest so far\n";
+		}
+
+		std::cout << "Please enter a double:\n";
+
+		/*
 		if (nums.size() == 2)
 		{
 			std::cout << "doubles entered:\n" << nums[0] << "\t" << nums[1] << '\n';
@@ -32,11 +53,12 @@ int main()
 
 			if ((nums[1] - nums[0]) < 0.01)
 			{
-				std::cout << "The numbers are alomst equal\n";
+				std::cout << "The numbers are almost equal\n";
 			}
-
 			nums = {};
-			std::cout << "Please enter 2 doubles:\n";
+			std::cout << "Please enter a double:\n";
 		}
+		*/
+
 	}
 }
