@@ -30,6 +30,11 @@ int main()
 				std::cout << "The larger value is " << nums[1] << '\n';
 			}
 
+			if ((nums[1] - nums[0]) < 0.01)
+			{
+				std::cout << "The numbers are alomst equal\n";
+			}
+
 			nums = {};
 			std::cout << "Please enter 2 doubles:\n";
 		}
