@@ -2,17 +2,17 @@ import std;
 
 int main()
 {
-	std::vector<int> nums;
-	int temp{ 0 };
+	std::vector<double> nums;
+	double temp{ 0.0 };
 
-	std::cout << "Please enter 2 ints:\n";
+	std::cout << "Please enter 2 doubles:\n";
 
 	while (std::cin >> temp)
 	{
 		nums.push_back(temp);
 		if (nums.size() == 2)
 		{
-			std::cout << "ints entered:\n" << nums[0] << "\t" << nums[1] << '\n';
+			std::cout << "doubles entered:\n" << nums[0] << "\t" << nums[1] << '\n';
 
 			if (nums[0] == nums[1])
 			{
@@ -31,7 +31,7 @@ int main()
 			}
 
 			nums = {};
-			std::cout << "Please enter 2 ints:\n";
+			std::cout << "Please enter 2 doubles:\n";
 		}
 	}
 }
