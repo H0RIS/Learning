@@ -14,7 +14,11 @@ int main()
 		{
 			std::cout << "ints entered:\n" << nums[0] << "\t" << nums[1] << '\n';
 
-			if (nums[0] > nums[1])
+			if (nums[0] == nums[1])
+			{
+				std::cout << "The numbers are equal\n";
+			}
+			else if (nums[0] > nums[1])
 			{
 				std::cout << "The smaller value is " << nums[1] << '\n';
 				std::cout << "The larger value is " << nums[0] << '\n';
