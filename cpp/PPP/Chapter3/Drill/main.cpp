@@ -99,5 +99,10 @@ int main()
 		<< "Smallest: " << smallest << " m" << '\n'
 		<< "Largest: " << largest << " m" << '\n'
 		<< "Number of values: " << nums.size() << '\n';
-
+	
+	std::cout << "Values: ";
+	for (size_t i = 0; i < nums.size(); i++)
+	{
+		std::cout << nums[i] << "m ";
+	}
 }
