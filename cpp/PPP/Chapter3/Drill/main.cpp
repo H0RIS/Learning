@@ -9,16 +9,17 @@ int main()
 	std::vector<double> nums;
 	double val{ lowest_double };
 	std::string unit{ "" };
+
 	double largest{ lowest_double };
 	double smallest{ max_double };
 	double conv_val{ lowest_double };
+	double sum{ 0.0 };
+
 	bool is_illegal{ false };
 	std::cout << ask_message << '\n';
 
 	while (std::cin >> val >> unit)
 	{
-		nums.push_back(val);
-
 		if (unit == "m")
 		{
 			conv_val = val;
@@ -43,19 +44,23 @@ int main()
 
 		if (!is_illegal)
 		{
-			if (val > largest)
+			if (conv_val > largest)
 			{
-				largest = val;
+				largest = conv_val;
 				std::cout << "The largest so far\n";
 			}
 
-			if (val < smallest)
+			if (conv_val < smallest)
 			{
-				smallest = val;
+				smallest = conv_val;
 				std::cout << "The smallest so far\n";
 			}
 
+			nums.push_back(conv_val);
+			sum += conv_val;
+
 			std::cout << "Entered value converted to m: " << conv_val << " m" << '\n';
+			
 		}
 		is_illegal = false;
 		std::cout << '\n' << ask_message << '\n';
@@ -89,6 +94,10 @@ int main()
 			std::cout << "Please enter a double:\n";
 		}
 		*/
-
 	}
+	std::cout << "Sum: " << sum << " m" << '\n'
+		<< "Smallest: " << smallest << " m" << '\n'
+		<< "Largest: " << largest << " m" << '\n'
+		<< "Number of values: " << nums.size() << '\n';
+
 }
