@@ -100,6 +100,8 @@ int main()
 		<< "Largest: " << largest << " m" << '\n'
 		<< "Number of values: " << nums.size() << '\n';
 	
+	std::ranges::sort(nums);
+
 	std::cout << "Values: ";
 	for (size_t i = 0; i < nums.size(); i++)
 	{
