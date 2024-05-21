@@ -1,7 +1,6 @@
 // 0.7_Compiling_your_first_program.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
-#include <iostream>
+import std;
 
 int main()
 {
