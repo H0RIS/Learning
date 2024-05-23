@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.x", "Chapter1\1.x\1.x.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0.7", "Chapter0\0.7\0.7.vcxproj", "{A4A84588-3812-4819-80B3-578203C20157}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter2", "Chapter2", "{1E83D2ED-583E-4CF6-8CB4-E5C634548975}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
