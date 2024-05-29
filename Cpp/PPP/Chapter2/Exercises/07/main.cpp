@@ -1,22 +1,20 @@
 /*
-Write a program that prompts the user to enter three integer values, and then outputs the val
-ues in numerical sequence separated by commas. So, if the user enters the values 10 4 6, the
- output should be 4, 6, 10. If two values are the same, they should just be ordered together.
- So, the input 454should give 4, 4, 5.
+Do exercise 6, but with three string values. So, if the user enters the values Steinbeck, Hem
+ingway, Fitzg erald, the output should be Fitzg erald, Hemingway, Steinbeck.
 */
 import std;
 
 int main()
 {
-	std::cout << "Enter 3 int values: ";
-	int val1{};
-	int val2{};
-	int val3{};
+	std::cout << "Enter 3 string values: ";
+	std::string val1{};
+	std::string val2{};
+	std::string val3{};
 	std::cin >> val1 >> val2 >> val3;
 
-	int first{};
-	int second{};
-	int third{};
+	std::string first{};
+	std::string second{};
+	std::string third{};
 
 	if (val1 < val2 && val1 < val3)
 	{
