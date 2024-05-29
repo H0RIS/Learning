@@ -44,9 +44,9 @@ int product(int val1, int val2)
 	return val1 * val2;
 }
 
-double ratio(int val1, int val2)
+int ratio(int val1, int val2)
 {
-	return (double)val1 / (double)val2;
+	return val1 / val2;
 }
 
 int main()
