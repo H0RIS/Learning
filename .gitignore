@@ -362,6 +362,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+
+# Unreal Engine
 # Visual Studio 2015 user specific files
 .vs/
 
