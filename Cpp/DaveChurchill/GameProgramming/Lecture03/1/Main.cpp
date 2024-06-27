@@ -58,10 +58,10 @@ int main()
         PointerPrint(harr3[i]);
     }
 
-    delete harr;
-    delete harr1;
-    delete harr2;
-    delete harr3;
+    delete[] harr;
+    delete[] harr1;
+    delete[] harr2;
+    delete[] harr3;
 
     return 0;
 }
