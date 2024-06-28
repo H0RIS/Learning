@@ -7,8 +7,8 @@ void PointerPrint(int& a)
 
 int main()
 {
-    int a = 10;
-    int b = 25;
+    int a{ 10 };
+    int b{ 25 };
 
     PointerPrint(a);
     PointerPrint(b);
