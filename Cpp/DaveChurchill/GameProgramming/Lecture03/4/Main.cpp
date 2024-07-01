@@ -41,6 +41,17 @@ public:
             std::cout << i << " " << m_arr[i] << "\n";
         }
     }
+
+    T& operator [](size_t index)
+    {
+        return m_arr[index];
+    }
+
+    const T& operator [](size_t index) const
+    {
+        return m_arr[index];
+    }
+
 };
 
 int main()
@@ -53,7 +64,16 @@ int main()
     myArray.set(7, 12.1f);
     std::cout << myArray.get(3) << "\n";
 
+    myArray[0] = 1.2345f;
+    myArray[1] = 7.543f;
+
     myArray.print();
+
+    const TArray<double> dArray(5);
+
+    std::cout << dArray[2] << "\n";
+
+    dArray.print();
 
     return 0;
 }
