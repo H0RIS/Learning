@@ -1,32 +1,33 @@
 #include <iostream>
 
-class IntArray
+template <typename T>
+class TArray
 {
 private:
     size_t m_size{};
-    int* m_arr{};
+    T* m_arr{};
 
 public:
-    IntArray(size_t size)
+    TArray(size_t size)
         : m_size(size)
-        , m_arr(new int[size]{})
+        , m_arr(new T[size] {})
     {
         std::cout << "Array Constuctor\n";
     }
 
-    ~IntArray()
+    ~TArray()
     {
         delete[] m_arr;
 
         std::cout << "Array Destructor\n";
     }
 
-    int get(size_t index) const
+    T get(size_t index) const
     {
         return m_arr[index];
     }
 
-    void set(size_t index, int val)
+    void set(size_t index, T val)
     {
         m_arr[index] = val;
     }
@@ -44,15 +45,15 @@ public:
 
 int main()
 {
-    IntArray myArray(10);
+    TArray<float> myArray(10);
 
     myArray.print();
 
-    myArray.set(3, 48);
-    myArray.set(7, 12);
+    myArray.set(3, 48.23f);
+    myArray.set(7, 12.1f);
     std::cout << myArray.get(3) << "\n";
 
     myArray.print();
 
-	return 0;
+    return 0;
 }
