@@ -1,0 +1,16 @@
+This is an example text file.
+It contains multiple lines
+with various words and    spaces.
+Working with files in C programming is fun.
+I am learning C programming. It's an exciting journey!
+Tabs	are	used	to	indent	code	and	align	columns.
+Newlines
+are
+used
+to
+separate
+lines
+of
+text.
+\n
+'\n'
